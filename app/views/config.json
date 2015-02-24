@@ -1,0 +1,25 @@
+{
+  "Global": {
+    "Title": "Nuevo Touareg. El verdadero lujo es estar preparado para todo.",
+    "Description": "Nuevo Touareg: diseño, tecnología e innovación.",
+    "Keywords": "Touareg, Volkswagen, deportiva, camioneta, off road, auto, clasico, tecnología, tecnologia, abs, desempeño, rendimiento, transmision, transmisión, puebla, méxico, suspension, suspensión, Nuevo TOuareg, diseño, elegante, faros, niebla, bi xenon, halogeno, aluminio, bluetooth, sonido, 4 motion, four motion, push to start, cámara 360, asr, edb, esc, Multicollision brake, detección de fatiga, híbrida, hybrid, TDI.",
+    "Favicon": "images/favicon.ico",
+    "FaviconType": "ico"
+
+  },
+
+  "Production": {
+    "UA": "UA-58497361-2"
+  },
+
+  "Development": {
+    "UA": "XX-XXXXXXX-X",
+    "ShareImage1": "http://qa.grupow.com/vw/2015/touareg//images/share/1200x630WRC.jpg",
+    "ShareImage2": "http://qa.grupow.com/vw/2015/touareg//images/share/500x500WRC.jpg",
+    "ShareImage3": "http://qa.grupow.com/vw/2015/touareg//images/share/250x250WRC.jpg",
+    "Favicon": "http://qa.grupow.com/vw/2015/touareg//images/favicon.ico",
+    "Host": "http://qa.grupow.com/vw/2015/touareg/"
+  }
+
+
+}

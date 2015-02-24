@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        title=Title
+
+        meta(charset="utf-8")
+        meta( name='viewport', content='width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale= 0.5' )
+        meta(name="description" content=Description)
+        meta(name="keywords" content=Keywords)
+        meta(property="og:title", content=Title)
+        meta(property="og:type", content="website")
+        meta(property="og:url", content=Host)
+        meta(property="og:image", content=ShareImage1)
+        meta(property="og:image", content=ShareImage2)
+        meta(property="og:image", content=ShareImage3)
+        meta(property="og:description", content=Description)
+
+        meta(itemprop="name" content=Title)
+        meta(itemprop="description" content=Description)
+
+
+        link(rel="icon" type="image/#{FaviconType}" href=Favicon)
+        link(rel="stylesheet", href="css/main.css")
+
+    body
+        block body
+
+        script(src="js/vendor.js")
+        script(src='js/templates.js')
+        script(src="js/main.js")
+        script(src="utils/snapme.js")
+
+

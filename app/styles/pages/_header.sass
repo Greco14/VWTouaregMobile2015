@@ -1,0 +1,23 @@
+#header
+  .logo
+    width: 121px
+    height: 121px
+    position: absolute
+    top: 0px
+    left: 20px
+    background-color: $white
+    .inLogo
+      position: relative
+      margin: 0 auto
+      margin-top: 10px
+      +imgRetina("../images/logo.png", 152px, 186px)
+  .menu
+    width: 70px
+    height: 70px
+    position: absolute
+    top: 20px
+    right: 20px
+    background-image: url('../images/01_Home/001-btn-menu.svg')
+    background-position: top
+    &.active
+      background-position: bottom

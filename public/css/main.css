@@ -1,0 +1,1296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+h1 {
+	transition:0.15s;
+}
+
+h1:hover {
+	transform: perspective( 600px ) rotateY( 35deg ) rotateX( 15deg );
+}*/
+@charset "UTF-8";
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: 'vw_headline_semibold';
+  src: url('../fonts/vwheadlineot-semibold-webfont.eot');
+  src: url('../fonts/vwheadlineot-semibold-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/vwheadlineot-semibold-webfont.svg#vwheadlineot-semibold-webfont') format('svg');
+  src: url('../fonts/vwheadlineot-semibold-webfont.woff') format('woff');
+  src: url('../fonts/vwheadlineot-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'vw_headline_book';
+  src: url('../fonts/vwheadlineot-book-webfont.eot');
+  src: url('../fonts/vwheadlineot-book-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/vwheadlineot-book-webfont.svg#vwheadlineot-book-webfont') format('svg');
+  src: url('../fonts/vwheadlineot-book-webfont.woff') format('woff');
+  src: url('../fonts/vwheadlineot-book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'vw_headline_black';
+  src: url('../fonts/vwheadlineot-black-webfont.eot');
+  src: url('../fonts/vwheadlineot-black-webfont.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/vwheadlineot-black-webfont.svg#vwheadlineot-black-webfont') format('svg');
+  src: url('../fonts/vwheadlineot-black-webfont.woff') format('woff');
+  src: url('../fonts/vwheadlineot-black-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+.font_book, body, html, h1, h2, h3, h4, p, .input .error, input, .autocomplete .error, .checkbox .text {
+  font-family: "vw_headline_book";
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always; }
+
+.font_semibold, .autocomplete-suggestions {
+  font-family: "vw_headline_semibold";
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always; }
+
+.font_black, #tecnologia .maskSlid .tecSec .safe-section .txt h1 {
+  font-family: "vw_headline_black";
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always; }
+
+.blue-me {
+  color: #1586e6; }
+
+.white-me {
+  color: #ffffff; }
+
+body, html {
+  background-color: #85898a;
+  height: 15675px;
+  min-height: 640px;
+  width: 100%;
+  min-width: 640px;
+  -webkit-overflow-scrolling: touch; }
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+#loader, #disable, #container, #sections {
+  width: 100%;
+  height: 100%; }
+
+#sections {
+  position: relative;
+  width: 100%; }
+
+#header, #footer {
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+
+#header {
+  top: 0px;
+  left: 0px; }
+
+.sections-mob {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .sections-mob .safe-section {
+    width: 640px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 230px; }
+
+h1, h2, h3, h4, p {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff; }
+
+h1 {
+  font-size: 90px; }
+
+h2 {
+  font-size: 65px; }
+
+h3 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 30px; }
+
+p {
+  font-size: 22px; }
+
+.titleSect {
+  width: 350px;
+  height: 45px;
+  position: absolute;
+  top: 40px;
+  right: 110px; }
+  .titleSect h4 {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right; }
+
+.centerProces {
+  width: 500px;
+  height: 200px; }
+
+.safeBull {
+  width: 640px;
+  height: 15px;
+  bottom: 50px; }
+
+.center-all, .center-horizontal, .center-vertical {
+  position: absolute;
+  margin: auto; }
+
+.center-all, .center-horizontal {
+  left: 0;
+  right: 0; }
+
+.center-all, .center-vertical {
+  top: 0;
+  bottom: 0; }
+
+form {
+  height: 100%; }
+
+.button {
+  position: relative; }
+  .button .btn {
+    border: 1px solid #000000;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center; }
+  .button .btn:hover {
+    color: #4a4a4a;
+    cursor: pointer; }
+  .button .btn:disabled, .button .btn[disabled=disabled] {
+    border: 1px solid #85898a;
+    color: #85898a; }
+  .button .message, .button .error {
+    font-size: 14px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 60px;
+    visibility: hidden;
+    width: 300px; }
+  .button .message {
+    color: #4a4a4a; }
+  .button .error {
+    color: #fd8631; }
+
+.input {
+  position: relative; }
+  .input .error {
+    width: 300px;
+    color: #fd8631;
+    font-size: 13px;
+    left: 0px;
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+    text-align: left; }
+
+input {
+  background-color: #f0f0f0;
+  border: #000000 solid 0px;
+  font-size: 15px;
+  outline: none;
+  padding: 5px 20px;
+  vertical-align: top; }
+
+.activeInput {
+  background-color: #ffffff;
+  border: #000000 solid 0px; }
+
+.errorInput {
+  background-color: #ffffff;
+  border: #fd8631 solid 0px; }
+
+.autocomplete {
+  height: 31px;
+  position: relative; }
+  .autocomplete input, .autocomplete .background, .autocomplete .results {
+    margin-bottom: 0px;
+    position: absolute; }
+  .autocomplete .error {
+    color: #fd8631;
+    font-size: 13px;
+    left: 265px;
+    position: absolute;
+    top: 14px;
+    visibility: hidden; }
+  .autocomplete .results {
+    left: 3px;
+    top: 59px; }
+  .autocomplete .background {
+    height: 23px;
+    position: absolute;
+    top: 22px; }
+
+.autocomplete-suggestions {
+  background: #FFF;
+  color: #ffffff;
+  cursor: default;
+  font-size: 22px;
+  overflow: auto;
+  text-align: left;
+  width: 350px !important; }
+
+.autocomplete-suggestion {
+  background-color: #0089f9;
+  border-bottom: #f0f0f0 solid 1px;
+  cursor: pointer;
+  padding: 20px 22px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.autocomplete-no-suggestion {
+  padding: 20px 22px; }
+
+.autocomplete-selected {
+  color: #ffffff; }
+
+.autocomplete-suggestions strong {
+  color: #ffffff;
+  font-weight: normal; }
+
+.autocomplete-group {
+  padding: 20px 22px; }
+
+.autocomplete-group strong {
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  border-bottom: #f0f0f0 solid 1px; }
+
+.checkbox {
+  position: relative; }
+  .checkbox .checkBtn, .checkbox .text {
+    display: inline-block; }
+  .checkbox .text {
+    color: #85898a;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 1px;
+    vertical-align: top;
+    width: 300px; }
+    .checkbox .text a {
+      color: #000000;
+      text-decoration: underline; }
+  .checkbox .checkBtn {
+    background-image: url("../images/checkbox.png");
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    vertical-align: top; }
+  .checkbox .checkBtn.active {
+    background-position: 0px -15px; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+::-mozkit-scrollbar {
+  display: none; }
+
+::-mskit-scrollbar {
+  display: none; }
+
+#home .facebookBtn {
+  font-size: 30px;
+  margin: auto;
+  width: 200px;
+  color: #ffffff;
+  border: none;
+  padding-top: 45px; }
+  #home .facebookBtn .message, #home .facebookBtn .error {
+    width: 200px; }
+#home .termsBtn {
+  border: 1px solid #000000;
+  font-size: 12px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 200px; }
+#home .termsBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+
+#share .copyBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 100px; }
+#share .copyBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#share .facebookBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 90px; }
+#share .facebookBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#share .twitterBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 70px; }
+#share .twitterBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#share .gplusBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 70px; }
+#share .gplusBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+
+#terms .closeBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto 0px auto auto;
+  padding: 10px;
+  text-align: center;
+  width: 100px; }
+#terms .closeBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+
+#success .homeBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 100px; }
+#success .homeBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+
+#register .homephoneBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 80px; }
+#register .homephoneBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#register .homephoneBtn:disabled, #register .homephoneBtn[disabled=disabled] {
+  border: 1px solid #4a4a4a;
+  color: #4a4a4a; }
+#register .cellphoneBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 80px; }
+#register .cellphoneBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#register .cellphoneBtn:disabled, #register .cellphoneBtn[disabled=disabled] {
+  border: 1px solid #4a4a4a;
+  color: #4a4a4a; }
+#register .workphoneBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 80px; }
+#register .workphoneBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+#register .workphoneBtn:disabled, #register .workphoneBtn[disabled=disabled] {
+  border: 1px solid #4a4a4a;
+  color: #4a4a4a; }
+#register .sendBtn {
+  border: 1px solid #000000;
+  font-size: 15px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 150px; }
+#register .sendBtn:hover {
+  color: #4a4a4a;
+  cursor: pointer; }
+
+#header .logo {
+  width: 121px;
+  height: 121px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-color: #ffffff; }
+  #header .logo .inLogo {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 76px 93px;
+    height: 93px;
+    width: 76px; }
+#header .menu {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url('../images/01_Home/001-btn-menu.svg');
+  background-position: top; }
+  #header .menu.active {
+    background-position: bottom; }
+
+#home {
+  height: 960px;
+  background-image: url('../images/01_Home/fondo-home.jpg');
+  background-position: center top; }
+  #home .safe-section .homeName {
+    width: 500px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative; }
+    #home .safe-section .homeName h1 {
+      letter-spacing: 15px; }
+    #home .safe-section .homeName h3 {
+      text-align: left; }
+  #home .safe-section .description {
+    width: 100%;
+    height: 22px;
+    position: relative;
+    margin-bottom: 70px; }
+    #home .safe-section .description p {
+      color: #3e3d3d; }
+  #home .safe-section .carro {
+    width: 100%;
+    height: 286px;
+    position: relative;
+    margin-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/01_Home/Touareg-home.png'); }
+  #home .safe-section .downBtn {
+    width: 67px;
+    height: 67px;
+    margin: 0 auto;
+    background-image: url('../images/01_Home/002-btn-scroll.svg');
+    background-position: center;
+    background-repeat: no-repeat; }
+
+#diseno-exterior {
+  height: 960px; }
+  #diseno-exterior .navBullets {
+    width: 400px;
+    height: 15px;
+    margin: 0 auto; }
+    #diseno-exterior .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/02_Diseño_Exterior/003-btn-bullet-d-exterior.svg');
+      background-position: center top;
+      margin-right: 40px; }
+      #diseno-exterior .navBullets .bul.act {
+        background-position: center 15px; }
+      #diseno-exterior .navBullets .bul#b-7 {
+        margin-right: 0; }
+  #diseno-exterior .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll; }
+    #diseno-exterior .maskSlid .sliderDE {
+      width: 800%;
+      height: 100%;
+      position: relative; }
+      #diseno-exterior .maskSlid .sliderDE .slideIt {
+        width: 12.5%;
+        height: 100%;
+        position: relative;
+        float: left; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt .safe-section {
+          padding-top: 210px; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt .bgW {
+          width: 100%;
+          height: 320px;
+          position: absolute;
+          bottom: 0%;
+          left: 0;
+          background-color: #ffffff; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt .txt {
+          width: 550px;
+          height: 230px;
+          margin: 0 auto; }
+          #diseno-exterior .maskSlid .sliderDE .slideIt .txt h3 {
+            color: #4b5252;
+            margin-bottom: 30px; }
+          #diseno-exterior .maskSlid .sliderDE .slideIt .txt p {
+            color: #9ca0a2;
+            font-size: 30px; }
+          #diseno-exterior .maskSlid .sliderDE .slideIt .txt.btmT {
+            margin-top: 470px; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.home {
+          background-image: url('../images/02_Diseño_Exterior/fondo-diseño-exterior-home.jpg');
+          background-position: center; }
+          #diseno-exterior .maskSlid .sliderDE .slideIt.home .car {
+            width: 481px;
+            height: 399px;
+            position: relative;
+            margin: 0 auto;
+            background-image: url('../images/02_Diseño_Exterior/touareg-D-exterior.png');
+            background-position: center;
+            margin-bottom: 70px; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.facia {
+          background-image: url('../images/02_Diseño_Exterior/touareg-parrilla.jpg');
+          background-position: center top; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.techo {
+          background-image: url('../images/02_Diseño_Exterior/touareg-techo-panoramico.jpg');
+          background-position: center top; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.rines {
+          background-image: url('../images/02_Diseño_Exterior/touareg-rines-de-aluminio.jpg');
+          background-position: center top; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.faros {
+          background-image: url('../images/02_Diseño_Exterior/touareg-faros-bi-xenon.jpg');
+          background-position: right top;
+          background-repeat: no-repeat;
+          background-color: #ffffff; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.niebla {
+          background-image: url('../images/02_Diseño_Exterior/touareg-faros-antiniebla.jpg');
+          background-position: right top;
+          background-repeat: no-repeat;
+          background-color: #ffffff; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.calavera {
+          background-image: url('../images/02_Diseño_Exterior/touareg-calaveras-led.jpg');
+          background-position: center top; }
+        #diseno-exterior .maskSlid .sliderDE .slideIt.escapes {
+          background-image: url('../images/02_Diseño_Exterior/touareg-escapes.jpg');
+          background-position: right top;
+          background-repeat: no-repeat;
+          background-color: #ffffff; }
+
+#diseno-interior {
+  height: 960px; }
+  #diseno-interior .navBullets {
+    width: 560px;
+    height: 15px; }
+    #diseno-interior .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/03_Diseño_Interior/004-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 35px; }
+      #diseno-interior .navBullets .bul.act {
+        background-position: center 15px; }
+      #diseno-interior .navBullets .bul#bI-19 {
+        margin-right: 0; }
+  #diseno-interior .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll; }
+    #diseno-interior .maskSlid .sliderDE {
+      width: 1000%;
+      height: 100%;
+      position: relative; }
+      #diseno-interior .maskSlid .sliderDE .slideIt {
+        width: 10%;
+        height: 100%;
+        position: relative;
+        float: left; }
+        #diseno-interior .maskSlid .sliderDE .slideIt .bgW {
+          width: 100%;
+          height: 320px;
+          position: absolute;
+          bottom: 0%;
+          left: 0;
+          background-color: #979691; }
+        #diseno-interior .maskSlid .sliderDE .slideIt .txt {
+          width: 550px;
+          height: 230px;
+          margin: 0 auto; }
+          #diseno-interior .maskSlid .sliderDE .slideIt .txt h3 {
+            color: #ffffff;
+            margin-bottom: 30px; }
+          #diseno-interior .maskSlid .sliderDE .slideIt .txt p {
+            color: #ffffff;
+            font-size: 25px; }
+          #diseno-interior .maskSlid .sliderDE .slideIt .txt.btmT {
+            margin-top: 450px; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.home {
+          background-image: url('../images/03_Diseño_Interior/fondo-diseño-interior-home.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di1 {
+          background-image: url('../images/03_Diseño_Interior/03.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di2 {
+          background-image: url('../images/03_Diseño_Interior/04.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di3 {
+          background-image: url('../images/03_Diseño_Interior/05.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di4 {
+          background-image: url('../images/03_Diseño_Interior/06.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di5 {
+          background-image: url('../images/03_Diseño_Interior/07.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di6 {
+          background-image: url('../images/03_Diseño_Interior/08.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di7 {
+          background-image: url('../images/03_Diseño_Interior/09.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di8 {
+          background-image: url('../images/03_Diseño_Interior/10.jpg');
+          background-position: center top; }
+        #diseno-interior .maskSlid .sliderDE .slideIt.di9 {
+          background-image: url('../images/03_Diseño_Interior/11.jpg');
+          background-position: center top; }
+
+#tecnologia {
+  height: 5760px; }
+  #tecnologia .maskSlid {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    #tecnologia .maskSlid .tecSec {
+      width: 100%;
+      height: 16.666%;
+      position: relative;
+      background-image: url('../images/04_Tecnología/gradient-tecnologia.jpg'); }
+      #tecnologia .maskSlid .tecSec .spec {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-repeat: no-repeat; }
+        #tecnologia .maskSlid .tecSec .spec.tc1 {
+          background-image: url('../images/04_Tecnología/img-camara-aerea.jpg');
+          background-position: center top; }
+        #tecnologia .maskSlid .tecSec .spec.tc2 {
+          background-image: url('../images/04_Tecnología/img-ascenso-pendientes.png');
+          background-position: center 70px; }
+        #tecnologia .maskSlid .tecSec .spec.tc3 {
+          background-image: url('../images/04_Tecnología/img-inclinacion-lateral.png');
+          background-position: center 40px; }
+        #tecnologia .maskSlid .tecSec .spec.tc4 {
+          background-image: url('../images/04_Tecnología/img-angulos-de-ataque.png');
+          background-position: center 180px; }
+        #tecnologia .maskSlid .tecSec .spec.tc5 {
+          background-image: url('../images/04_Tecnología/img-vadeo.png');
+          background-position: center 290px; }
+        #tecnologia .maskSlid .tecSec .spec.tc6 {
+          background-image: url('../images/04_Tecnología/img-4motion.png');
+          background-position: center 150px; }
+      #tecnologia .maskSlid .tecSec .safe-section .txt {
+        width: 510px;
+        height: 190px;
+        padding-top: 50px;
+        margin: 0 auto;
+        position: relative; }
+        #tecnologia .maskSlid .tecSec .safe-section .txt h1 {
+          font-size: 75px;
+          color: #ffffff;
+          margin-bottom: 50px; }
+        #tecnologia .maskSlid .tecSec .safe-section .txt h3 {
+          color: #ffffff;
+          margin-bottom: 50px;
+          font-size: 30px; }
+        #tecnologia .maskSlid .tecSec .safe-section .txt p {
+          font-size: 30px;
+          color: #4b5252; }
+      #tecnologia .maskSlid .tecSec .safe-section .btmT {
+        margin-top: 370px; }
+
+#innovacion {
+  height: 960px;
+  background-image: url('../images/05_Innovación/img-innovacion.jpg');
+  background-position: center top;
+  background-repeat: x-repeat; }
+  #innovacion .navBullets {
+    width: 130px;
+    height: 15px; }
+    #innovacion .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/06_Sistemas_de_asistencia/005-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 40px; }
+      #innovacion .navBullets .bul.act {
+        background-position: center 15px; }
+      #innovacion .navBullets .bul#bIn-2 {
+        margin-right: 0; }
+  #innovacion .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll; }
+    #innovacion .maskSlid .sliderDE {
+      width: 300%;
+      height: 100%;
+      position: relative; }
+      #innovacion .maskSlid .sliderDE .slideIt {
+        width: 33.33%;
+        height: 100%;
+        position: relative;
+        float: left; }
+        #innovacion .maskSlid .sliderDE .slideIt .safe-section {
+          padding-top: 210px; }
+        #innovacion .maskSlid .sliderDE .slideIt .bgW {
+          width: 100%;
+          height: 500px;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          background-image: url('../images/05_Innovación/gradient.jpg');
+          background-color: #bcb8ad; }
+        #innovacion .maskSlid .sliderDE .slideIt .txt {
+          width: 550px;
+          height: 230px;
+          margin: 0 auto; }
+          #innovacion .maskSlid .sliderDE .slideIt .txt h3 {
+            color: #37404b;
+            margin-bottom: 40px; }
+          #innovacion .maskSlid .sliderDE .slideIt .txt .icon {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-position: center;
+            background-repeat: no-repeat; }
+            #innovacion .maskSlid .sliderDE .slideIt .txt .icon.i1 {
+              width: 143px;
+              height: 146px;
+              background-image: url('../images/05_Innovación/img_motortdi.svg'); }
+            #innovacion .maskSlid .sliderDE .slideIt .txt .icon.i2 {
+              width: 79px;
+              height: 151px;
+              background-image: url('../images/05_Innovación/img_transtriptonic.svg'); }
+            #innovacion .maskSlid .sliderDE .slideIt .txt .icon.i3 {
+              width: 165px;
+              height: 144px;
+              background-image: url('../images/05_Innovación/img_tecnologiahibr.svg'); }
+          #innovacion .maskSlid .sliderDE .slideIt .txt p {
+            color: #4c5c6f;
+            font-size: 30px; }
+          #innovacion .maskSlid .sliderDE .slideIt .txt.btmT {
+            margin-top: 320px; }
+
+#sistema-de-asistencia {
+  height: 1770px;
+  background-image: url('../images/06_Sistemas_de_asistencia/bg.jpg'); }
+  #sistema-de-asistencia .navBullets {
+    width: 235px;
+    height: 15px; }
+    #sistema-de-asistencia .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/06_Sistemas_de_asistencia/005-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 40px; }
+      #sistema-de-asistencia .navBullets .bul.act {
+        background-position: center bottom; }
+      #sistema-de-asistencia .navBullets .bul#bAs-4 {
+        margin-right: 0; }
+  #sistema-de-asistencia .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../images/06_Sistemas_de_asistencia/img-sistema-de-asistencia.png');
+    background-position: center 340px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0; }
+    #sistema-de-asistencia .bg .txt {
+      width: 550px;
+      height: 230px;
+      margin: 0 auto;
+      margin-top: 170px; }
+      #sistema-de-asistencia .bg .txt h3 {
+        color: #37404b;
+        margin-bottom: 30px; }
+      #sistema-de-asistencia .bg .txt p {
+        color: #ffffff;
+        font-size: 30px; }
+  #sistema-de-asistencia .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll; }
+    #sistema-de-asistencia .maskSlid .sliderDE {
+      width: 500%;
+      height: 100%;
+      position: relative; }
+      #sistema-de-asistencia .maskSlid .sliderDE .slideIt {
+        width: 20%;
+        height: 100%;
+        position: relative;
+        float: left; }
+        #sistema-de-asistencia .maskSlid .sliderDE .slideIt .safe-section {
+          padding-top: 210px; }
+        #sistema-de-asistencia .maskSlid .sliderDE .slideIt .bgW {
+          width: 100%;
+          height: 500px;
+          position: absolute;
+          bottom: 0%;
+          left: 0;
+          background-image: url('../images/05_Innovación/gradient.jpg');
+          background-color: #bcb8ad; }
+        #sistema-de-asistencia .maskSlid .sliderDE .slideIt .txt {
+          width: 550px;
+          height: 230px;
+          margin: 0 auto;
+          margin-top: 1450px; }
+          #sistema-de-asistencia .maskSlid .sliderDE .slideIt .txt h1 {
+            margin-bottom: 40px; }
+          #sistema-de-asistencia .maskSlid .sliderDE .slideIt .txt h2 {
+            margin-bottom: 40px; }
+          #sistema-de-asistencia .maskSlid .sliderDE .slideIt .txt p {
+            color: #4b5252; }
+
+#seguridad {
+  height: 1425px; }
+  #seguridad .multicolition {
+    width: 100%;
+    height: 640px;
+    position: relative;
+    background-image: url('../images/07_Seguridad/gradient.jpg'); }
+    #seguridad .multicolition .car {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-image: url('../images/07_Seguridad/img-seguridad.png');
+      background-position: center;
+      background-repeat: no-repeat; }
+  #seguridad .typeMulty {
+    width: 100%;
+    height: 286px;
+    position: relative;
+    background-color: #1b242b; }
+    #seguridad .typeMulty .txt {
+      width: 510px;
+      height: 190px;
+      padding-top: 50px;
+      margin: 0 auto;
+      position: relative; }
+      #seguridad .typeMulty .txt h3 {
+        color: #ffffff;
+        margin-bottom: 50px; }
+      #seguridad .typeMulty .txt p {
+        font-size: 30px;
+        opacity: 0.4; }
+  #seguridad .navBullets {
+    width: 130px;
+    height: 15px; }
+    #seguridad .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/03_Diseño_Interior/004-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 40px; }
+      #seguridad .navBullets .bul.act {
+        background-position: center 15px; }
+      #seguridad .navBullets .bul#bSe-2 {
+        margin-right: 0; }
+  #seguridad .maskSlid {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #a4a9af;
+    overflow-x: scroll; }
+    #seguridad .maskSlid .sliderDE {
+      width: 300%;
+      height: 100%;
+      position: relative; }
+      #seguridad .maskSlid .sliderDE .slideIt {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+        position: relative; }
+        #seguridad .maskSlid .sliderDE .slideIt .safe-section {
+          padding-top: 30px; }
+        #seguridad .maskSlid .sliderDE .slideIt .txt {
+          width: 510px;
+          height: 190px;
+          margin: 0 auto;
+          position: relative; }
+          #seguridad .maskSlid .sliderDE .slideIt .txt .icon {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-position: center;
+            background-repeat: no-repeat; }
+            #seguridad .maskSlid .sliderDE .slideIt .txt .icon.i1 {
+              width: 120px;
+              height: 123px;
+              background-image: url('../images/07_Seguridad/icn-asistente-sueño.svg'); }
+            #seguridad .maskSlid .sliderDE .slideIt .txt .icon.i2 {
+              width: 120px;
+              height: 123px;
+              background-image: url('../images/07_Seguridad/icn-bolsa-aire.svg'); }
+            #seguridad .maskSlid .sliderDE .slideIt .txt .icon.i3 {
+              width: 214px;
+              height: 123px;
+              background-image: url('../images/07_Seguridad/icn-aunemto-rigidez.svg'); }
+          #seguridad .maskSlid .sliderDE .slideIt .txt h3 {
+            color: #37404b;
+            margin-bottom: 50px; }
+          #seguridad .maskSlid .sliderDE .slideIt .txt p {
+            font-size: 30px;
+            color: #4c5c6f; }
+
+#versiones {
+  height: 960px; }
+  #versiones a {
+    text-decoration: none; }
+  #versiones .btn {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    background-image: url('../images/08_Versiones/img-versiones.jpg'); }
+    #versiones .btn.v6 {
+      background-position: center 0; }
+    #versiones .btn.v6Tdi {
+      background-position: center -430px; }
+    #versiones .btn.v8 {
+      background-position: center -860px; }
+    #versiones .btn.hyd {
+      background-position: center -1280px; }
+    #versiones .btn h1 {
+      padding-top: 90px; }
+
+#colores {
+  height: 960px;
+  background-image: url('../images/01_Home/fondo-home.jpg');
+  background-position: center; }
+  #colores .car {
+    width: 574px;
+    height: 399px;
+    position: absolute;
+    top: 288px;
+    display: none; }
+    #colores .car.cr0 {
+      background-image: url('../images/10_Colores/05-plata.png'); }
+    #colores .car.cr1 {
+      background-image: url('../images/10_Colores/04-blanco.png'); }
+    #colores .car.cr2 {
+      background-image: url('../images/10_Colores/01-Negro-profundo.png'); }
+    #colores .car.cr3 {
+      background-image: url('../images/10_Colores/07-oro.png'); }
+    #colores .car.cr4 {
+      background-image: url('../images/10_Colores/02-Gris-Canyon.png'); }
+    #colores .car.cr5 {
+      background-image: url('../images/10_Colores/03-Azul-de-luna.png'); }
+    #colores .car.cr6 {
+      background-image: url('../images/10_Colores/06-Marron-roble.png'); }
+    #colores .car.act {
+      display: block; }
+  #colores .txt {
+    width: 550px;
+    height: 120px;
+    bottom: 100px;
+    display: none; }
+    #colores .txt h3 {
+      color: #37404b;
+      margin-bottom: 40px; }
+    #colores .txt.act {
+      display: block; }
+    #colores .txt p {
+      color: #4c5c6f;
+      font-size: 30px; }
+  #colores .navBullets {
+    width: 340px;
+    height: 15px; }
+    #colores .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/06_Sistemas_de_asistencia/005-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 40px; }
+      #colores .navBullets .bul.act {
+        background-position: center bottom; }
+      #colores .navBullets .bul#bC-6 {
+        margin-right: 0; }
+  #colores .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #colores .maskSlid .sliderDE {
+      width: 700%;
+      height: 100%;
+      position: relative; }
+      #colores .maskSlid .sliderDE .slideIt {
+        width: 14.28%;
+        height: 100%;
+        position: relative;
+        float: left; }
+        #colores .maskSlid .sliderDE .slideIt .car {
+          width: 574px;
+          height: 399px;
+          position: relative;
+          margin: 0 auto;
+          margin-top: 288px; }
+          #colores .maskSlid .sliderDE .slideIt .car.cr1 {
+            background-image: url('../images/10_Colores/05-plata.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr2 {
+            background-image: url('../images/10_Colores/04-blanco.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr3 {
+            background-image: url('../images/10_Colores/01-Negro-profundo.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr4 {
+            background-image: url('../images/10_Colores/07-oro.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr5 {
+            background-image: url('../images/10_Colores/02-Gris-Canyon.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr6 {
+            background-image: url('../images/10_Colores/03-Azul-de-luna.png'); }
+          #colores .maskSlid .sliderDE .slideIt .car.cr7 {
+            background-image: url('../images/10_Colores/06-Marron-roble.png'); }
+
+#galeria {
+  height: 960px; }
+  #galeria .navBullets {
+    width: 560px;
+    height: 15px; }
+    #galeria .navBullets .bul {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      float: left;
+      background-image: url('../images/03_Diseño_Interior/004-btn-bullet-d-interior.svg');
+      background-position: center top;
+      margin-right: 25px; }
+      #galeria .navBullets .bul.act {
+        background-position: center 15px; }
+      #galeria .navBullets .bul#bG-14 {
+        margin-right: 0; }
+  #galeria .maskSlid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: scroll; }
+    #galeria .maskSlid .sliderDE {
+      width: 1500%;
+      height: 100%;
+      position: relative; }
+      #galeria .maskSlid .sliderDE .slideIt {
+        width: 6.666%;
+        height: 100%;
+        position: relative;
+        float: left;
+        background-position: center 0; }
+        #galeria .maskSlid .sliderDE .slideIt.cr1 {
+          background-image: url('../images/09_Galeria/01.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr2 {
+          background-image: url('../images/09_Galeria/15.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr3 {
+          background-image: url('../images/09_Galeria/03.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr4 {
+          background-image: url('../images/09_Galeria/04.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr5 {
+          background-image: url('../images/09_Galeria/05.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr6 {
+          background-image: url('../images/09_Galeria/06.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr7 {
+          background-image: url('../images/09_Galeria/07.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr8 {
+          background-image: url('../images/09_Galeria/08.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr9 {
+          background-image: url('../images/09_Galeria/09.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr10 {
+          background-image: url('../images/09_Galeria/10.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr11 {
+          background-image: url('../images/09_Galeria/11.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr12 {
+          background-image: url('../images/09_Galeria/12.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr13 {
+          background-image: url('../images/09_Galeria/13.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr14 {
+          background-image: url('../images/09_Galeria/14.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt.cr15 {
+          background-image: url('../images/09_Galeria/15.jpg'); }
+        #galeria .maskSlid .sliderDE .slideIt .txt {
+          width: 550px;
+          height: 120px;
+          margin: 0 auto;
+          margin-top: 100px; }
+          #galeria .maskSlid .sliderDE .slideIt .txt h3 {
+            color: #37404b;
+            margin-bottom: 40px; }
+          #galeria .maskSlid .sliderDE .slideIt .txt p {
+            color: #4c5c6f;
+            font-size: 30px; }
+
+#menu {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow-x: hidden;
+  z-index: 2; }
+  #menu .lightBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0%; }
+  #menu .menuHold {
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: -100%;
+    background-color: #ffffff;
+    overflow-x: hidden; }
+    #menu .menuHold a {
+      text-decoration: none; }
+    #menu .menuHold .btnMenu {
+      width: 100%;
+      height: 9.09%;
+      border-bottom: 1px solid #d2d7db; }
+      #menu .menuHold .btnMenu h3 {
+        padding-top: 5%;
+        color: #4b5252;
+        font-size: 27px; }
+      #menu .menuHold .btnMenu:active {
+        background-color: #d2d7db; }
+        #menu .menuHold .btnMenu:active h3 {
+          color: #ffffff; }
+    #menu .menuHold .shareSect {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      background-color: #ffffff; }
+      #menu .menuHold .shareSect .close {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/menu/cerrar.png'); }
+      #menu .menuHold .shareSect .safeIn {
+        width: 300px;
+        height: 700px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 100px; }
+        #menu .menuHold .shareSect .safeIn h3 {
+          color: #d2d7db;
+          text-align: center;
+          margin-bottom: 110px; }
+        #menu .menuHold .shareSect .safeIn .btnGo {
+          width: 124px;
+          height: 124px;
+          position: relative;
+          margin: 0 auto;
+          margin-bottom: 100px;
+          background-position: center top;
+          background-repeat: no-repeat; }
+          #menu .menuHold .shareSect .safeIn .btnGo.tt {
+            background-image: url('../images/menu/icn-compartir-tw.png'); }
+          #menu .menuHold .shareSect .safeIn .btnGo.fb {
+            background-image: url('../images/menu/icn-compartir-fb.png'); }
+          #menu .menuHold .shareSect .safeIn .btnGo.gp {
+            background-image: url('../images/menu/icn-compartir-gplus.png'); }
+          #menu .menuHold .shareSect .safeIn .btnGo:active {
+            background-position: center bottom; }
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #4a4a4a;
+  z-index: 3; }
+  #loader .centerme {
+    width: 450px;
+    height: 100px; }
+    #loader .centerme .line {
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff; }

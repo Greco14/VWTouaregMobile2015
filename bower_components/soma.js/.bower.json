@@ -1,0 +1,14 @@
+{
+  "name": "soma.js",
+  "main": "./build/soma.js",
+  "dependencies": {},
+  "homepage": "https://github.com/rauluranga/somajs",
+  "_release": "fc905433a7",
+  "_resolution": {
+    "type": "commit",
+    "commit": "fc905433a7"
+  },
+  "_source": "git://github.com/rauluranga/somajs.git",
+  "_target": "fc905433a7",
+  "_originalSource": "rauluranga/somajs"
+}

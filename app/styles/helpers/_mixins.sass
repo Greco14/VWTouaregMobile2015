@@ -1,0 +1,59 @@
+//+font-smoothing()
+=font-smoothing()
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  font-smooth: always
+
+//+img(logo, 100px, 40px);
+=img($image, $width, $height)
+  background-image: url($image)
+  background-repeat: no-repeat
+  height: $height
+  width: $width
+
+//+imgRetina(logo, 100px, 40px);
+=imgRetina($image, $width, $height)
+  background-image: url($image)
+  background-repeat: no-repeat
+  background-size: $width/2 $height/2
+  height: $height/2
+  width: $width/2
+
+//+opacity(0.3)
+=opacity($value)
+  $alpha: $value * 10
+  filter: alpha(opacity=$alpha)
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + ($value * 10) + ')'
+  -moz-opacity: $value
+  -khtml-opacity: $value
+  opacity: $value
+
+=border-radius($params)
+	-webkit-border-radius: $params
+	-moz-border-radius: $params
+	border-radius: $params
+
+=animation($params)
+  -webkit-animation: $params
+  -moz-animation: $params
+  -ms-animation: $params
+  animation: $params
+
+=transition($params)
+  -webkit-transition: $params
+  -moz-transition: $params
+  -o-transition: $params
+  transition: $params
+
+=transform($params)
+  -webkit-transform: $params
+  -moz-transform: $params
+  -ms-transform: $params
+  transform: $params
+
+=translateX($params)
+  -webkit-transform: translateX($params)
+  -moz-transform: translateX($params)
+  -ms-transform: translateX($params)
+  transform: translateX($params)
+

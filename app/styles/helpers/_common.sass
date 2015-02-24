@@ -1,0 +1,268 @@
+.font_book
+  font-family: "vw_headline_book"
+  +font-smoothing()
+
+.font_semibold
+  font-family: "vw_headline_semibold"
+  +font-smoothing()
+
+.font_black
+  font-family: "vw_headline_black"
+  +font-smoothing()
+.blue-me
+  color: $azul-title
+.white-me
+  color: $white
+
+body, html
+  @extend .font_book
+  background-color: $gray3
+  height: 15675px
+  min-height: 640px
+  width: 100%
+  min-width: 640px
+  -webkit-overflow-scrolling: touch
+
+#container
+  width: 100%
+  height: 100%
+  position: relative
+  overflow-x: hidden
+  -webkit-overflow-scrolling: touch
+
+#loader, #disable, #container, #sections
+  width: 100%
+  height: 100%
+
+
+
+#sections
+  position: relative
+  width: 100%
+
+
+#header, #footer
+  position: fixed
+  width: 100%
+  z-index: 1
+
+#header
+  top: 0px
+  left: 0px
+.sections-mob
+  position: relative
+  width: 100%
+  height: 100%
+  .safe-section
+    width: 640px
+    position: relative
+    margin: 0 auto
+    padding-top: 230px
+h1, h2, h3, h4, p
+  position: relative
+  margin: 0 auto
+  text-align: center
+  color: $white
+  @extend .font_book
+h1
+  font-size: 90px
+h2
+  font-size: 65px
+h3
+  font-size: 40px
+h4
+  font-size: 30px
+p
+  font-size: 22px
+.titleSect
+  width: 350px
+  height: 45px
+  position: absolute
+  top: 40px
+  right: 110px
+  h4
+    color: $whiteAlpha
+    text-align: right
+
+.centerProces
+  width: 500px
+  height: 200px
+
+
+.safeBull
+  width: 640px
+  height: 15px
+  bottom: 50px
+
+.center-all,
+.center-horizontal,
+.center-vertical
+  position: absolute
+  margin: auto
+
+.center-all,
+.center-horizontal
+  left: 0
+  right: 0
+
+.center-all,
+.center-vertical
+  top: 0
+  bottom: 0
+
+
+form
+  height: 100%
+
+//Button
+.button
+  position: relative
+  .btn
+    border: 1px solid $black
+    font-size: 14px
+    padding: 10px
+    text-align: center
+  .btn:hover
+    color: $gray2
+    cursor: pointer
+  .btn:disabled, .btn[disabled=disabled]
+    border: 1px solid $gray3
+    color: $gray3
+  .message, .error
+    font-size: 14px
+    left: 0
+    margin: 0 auto
+    position: absolute
+    right: 0
+    text-align: center
+    top: 60px
+    visibility: hidden
+    width: 300px
+  .message
+    color: $gray2
+  .error
+    color: $orange
+
+
+
+
+//Input
+.input
+  position: relative
+  .error
+    width: 300px
+    @extend .font_book
+    color: $orange
+    font-size: 13px
+    left: 00px
+    position: absolute
+    top: -20px
+    visibility: hidden
+    text-align: left
+input
+  @extend .font_book
+  background-color: $gray
+  border: $black solid 0px
+  font-size: 15px
+  outline: none
+  padding: 5px 20px
+  vertical-align: top
+
+.activeInput
+  background-color: $white
+  border: $black solid 0px
+.errorInput
+  background-color: $white
+  border: $orange solid 0px
+
+//Autocomplete
+.autocomplete
+  height: 31px
+  position: relative
+  //width: 260px
+  input, .background, .results
+    margin-bottom: 0px
+    position: absolute
+  .error
+    @extend .font_book
+    color: $orange
+    font-size: 13px
+    left: 265px
+    position: absolute
+    top: 14px
+    visibility: hidden
+  .results
+    left: 3px
+    top: 59px
+    //visibility: hidden
+  .background
+    //background-color: $white
+    height: 23px
+    position: absolute
+    top: 22px
+    //width: 100%
+.autocomplete-suggestions
+  @extend .font_semibold
+  background: #FFF
+  color: $white
+  cursor: default
+  font-size: 22px
+  overflow: auto
+  text-align: left
+  width: 350px !important
+.autocomplete-suggestion
+  background-color: $bluetText
+  border-bottom: $gray solid 1px
+  cursor: pointer
+  padding: 20px 22px
+  white-space: nowrap
+  overflow: hidden
+.autocomplete-no-suggestion
+  padding: 20px 22px
+.autocomplete-selected
+  color: $white
+.autocomplete-suggestions strong
+  color: $white
+  font-weight: normal
+.autocomplete-group
+  padding: 20px 22px
+.autocomplete-group strong
+  font-weight: bold
+  color: $white
+  display: block
+  border-bottom: $gray solid 1px
+
+//Checkbox
+.checkbox
+  position: relative
+  .checkBtn, .text
+    display: inline-block
+  .text
+    @extend .font_book
+    color: $gray3
+    cursor: pointer
+    font-size: 13px
+    margin-left: 5px
+    margin-top: 1px
+    vertical-align: top
+    width: 300px
+    a
+      color: $black
+      text-decoration: underline
+  .checkBtn
+    +img("../images/checkbox.png", 15px, 15px)
+    cursor: pointer
+    vertical-align: top
+  .checkBtn.active
+    background-position: 0px -15px
+::-webkit-scrollbar
+  display: none
+::-mozkit-scrollbar
+  display: none
+::-mskit-scrollbar
+  display: none
+
+
+
+
+
